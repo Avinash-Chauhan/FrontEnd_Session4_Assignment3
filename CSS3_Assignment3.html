@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Assignment 3</title>
+	<!--Using CSS3 Animation and Transition properties -->
+	<style type="text/css">
+		.box {
+               width: 150px;
+               height: 150px;
+               background: green;
+               margin-top: 20px;
+               margin-left: auto;
+               margin-right: auto;
+               display: block;
+               text-align: center;
+               display: table-cell;
+               vertical-align: middle;
+               -webkit-transition: background-color 2s ease-out;
+               -moz-transition: background-color 2s ease-out;
+               -o-transition: background-color 2s ease-out;
+               transition: background-color 2s ease-out;
+            }
+         /* on hovering of cursor on box it transform to circle as per transition time given   */
+        .box:hover {
+              background-color: orange;
+              cursor: pointer;
+              width: 150px;
+	          height: 150px;
+              margin-top: 40px;
+	          -moz-border-radius: 50px;
+	          -webkit-border-radius: 50px;
+	           border-radius: 70px;
+               transition: 4s;
+
+                  }
+	</style>
+</head>
+<body>
+ <div class="box">Box</div>
+</body>
+</html>
